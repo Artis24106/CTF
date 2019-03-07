@@ -109,6 +109,7 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 使用`find . -name 'file*' -exec unzip {} \;`大量解壓縮，得到`partaa.enc, ...,  partke.enc`
 
 `key.txt`其實是RSA私鑰，可以用來將所有.enc解密
+
 首先分別在`key.txt`的頭尾加上`-----BEGIN RSA PRIVATE KEY-----`和`-----END RSA PRIVATE KEY-----`，並更改檔名為`key.pem`
 
 使用python腳本進行解密
